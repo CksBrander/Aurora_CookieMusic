@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="artiststyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="artist">
+            <nav>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="search">
+                </div>
+                <ul>
+                    <li>HOME<span></span></li>
+                    <li>DISCOVER<span></span></li>
+                    <li>LIBRARY<span></span></li>
+                </ul>
+            </nav>
+            <div class="show">
+                <<h5 id="title" style="color: #fff; ">
+                    Select you Song
+                    <div class="subtitle">feel the beat</div>
+                </h5>
+                <div class="playbotton">
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill fa-5x"></i>
+                </div>
+            </div>
+            <h3 style="margin: 3% 2% 0% 2%; color: #fff; ">CHOOSE YOUR SONG</h3>
+            <div class="list">
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/20.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Kya khoob lagti ho
+                        <br>
+                        <div class="subtitle">Kalyan ji/Anand ji</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i onclick="playMyAudio()" class="bi playListPlay bi-play-circle-fill" id="20" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/21.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Chura li dil Tumne
+                        <br>
+                        <div class="subtitle">Asha bhosle/mohammed rafi</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/22.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Backbone
+                        <br>
+                        <div class="subtitle">Harrdy sandhu</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/23.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Sleepless
+                        <br>
+                        <div class="subtitle">A.P dhillon</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/24.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">One love
+                        <br>
+                        <div class="subtitle">Subh</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/25.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Amplifier
+                        <br>
+                        <div class="subtitle">Imran khan</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/26.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Khuda jaane
+                        <br>
+                        <div class="subtitle">KK</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="7" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/27.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">O re piya
+                        <br>
+                        <div class="subtitle">Rahat fateh ali khan</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="8" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/28.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Tere liye
+                        <br>
+                        <div class="subtitle">lata Mangeshkar</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="9" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/29.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Tenu leke
+                        <br>
+                        <div class="subtitle">Sonu nigam</div>
+                    </h5>
+                    <audio src="audio/1.mp3" id="myAudio"></audio>
+                    <i class="bi playListPlay bi-play-circle-fill" id="12" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/30.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Tere bina
+                        <br>
+                        <div class="subtitle">A.R. rehman</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="13" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/31.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Rafta Rafta
+                        <br>
+                        <div class="subtitle">himesh reshammiya</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="14" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/32.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Teri Ore
+                        <br>
+                        <div class="subtitle">sherya ghoshal</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="15" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/33.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Tera hone lga hu
+                        <br>
+                        <div class="subtitle">Pritam/atif aslam</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/34.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">zara sa
+                        <br>
+                        <div class="subtitle">Pritam/KK</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/35.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Jab se tere naina
+                        <br>
+                        <div class="subtitle">shaan/monty sharma</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/36.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Pee loon
+                        <br>
+                        <div class="subtitle">Tulsi kumar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/37.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Chor bazaari
+                        <br>
+                        <div class="subtitle">Neeraj/Sunidhi chauhan</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/38.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Ajab si
+                        <br>
+                        <div class="subtitle">KK</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/39.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Papa meri jaan
+                        <br>
+                        <div class="subtitle">Sonu nigam/Harsh vardhan</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+                <li class="songItem">
+                    <div class="play">
+                        <img src="img/5.jpg" alt="lightswitch">
+                    </div>
+                    <h5 style="color: #fff; margin-left: 10px;">Light Switch
+                        <br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="16" style="color: #fff; margin-left: 300px;"></i>
+                </li>
+            </div>
+        </div>
+        <div class="menu_side">
+            <h1>COOKIE MUSIC</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note"></i>playlist</h4>
+                <h4><span></span>last listened</h4>
+                <h4><span></span>recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img style="display: flex;" src="img/1.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Tu Hai Kahan
+                        <div class="subtitle">AUR</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img style="display: flex;" src="img/2.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        On my way
+                        <div class="subtitle"Alan Walker></div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img style="display: flex;" src="img/3.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Shiv Tandav
+                        <div class="subtitle">ananya basu</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>04</span>
+                    <img style="display: flex;" src="img/4.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        NeeleNeele Ambar
+                        <div class="subtitle">Kishore Kumar</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img style="display: flex;" src="img/5.jpg" alt="tu hai Kahan">
+                    <h5 style="color: #fff; ">
+                        Light Switch
+                        <div class="subtitle">charlie puth</div>
+                    </h5>
+                    <i style="color: #fff;" class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                </li>
+            </div>
+        </div>
+
+
+
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="dafa4066.jpg" alt="alan" id="poster_master_play">
+            <h5 id="title" style="color: #fff; ">
+                DAFA 406
+                <div class="subtitle">chotu shikari</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+            <div class="user">
+                <h5>USER PROFILE
+                    <div class="subtitle">account
+                </h5>
+                <img src="download (1).png" alt="user">
+            </div>
+
+        </div>
+        <div id="files-container" style="height:600px;"></div>
+    </header>
+    <style src="artistscript.js"></style>
+</body>
+
+</html>
